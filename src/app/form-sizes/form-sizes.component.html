@@ -1,0 +1,13 @@
+<form #f="ngForm" id="prodForm" class="select-style">
+  <label for="prodSize">SELECT A SIZE</label>
+  <select name="size" ngModel id="prodSize">
+    <option *ngFor="let size of sizes" [ngValue]="size">
+      {{ size.name }}
+    </option>
+  </select>
+  <br />
+  <button type="submit" class="add-cart-btn">ADD TO CART</button>
+  <p>
+    {{ f.value.size?.name | json }}
+  </p>
+</form>

@@ -5,10 +5,18 @@ import { AppComponent } from './app.component';
 import { ProductOverviewComponent } from './product-overview/product-overview.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StarsComponent } from './shared/stars/stars.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormSizesComponent } from './form-sizes/form-sizes.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductOverviewComponent, StarsComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, ProductOverviewComponent, StarsComponent, FormSizesComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -3,7 +3,6 @@ import { take } from 'rxjs';
 import { ProductDataService } from '../services/product-data.service';
 import { ProductStylesService } from '../services/product-styles.service';
 import { RelatedService } from '../services/related.service';
-import { StarsComponent } from '../shared/stars/stars.component';
 
 @Component({
   selector: 'app-product-overview',
@@ -22,14 +21,19 @@ export class ProductOverviewComponent {
       .pipe(take(1))
       .subscribe((prodData) => {
         this.productData = prodData;
-        console.log(this.productData);
+        // console.log(this.productData);
       });
     this.productStylesService
       .getStylesData()
       .pipe(take(1))
-      .subscribe((stylesData) => {
+      .subscribe((stylesData: any) => {
         this.productStyles = stylesData;
-        console.log(this.productStyles);
+        for (let style of stylesData.result) {
+          if (style.default_style === '1') {
+            this.current_style = style;
+          }
+        }
+        // console.log(this.productStyles);
       });
     this.relatedProducts
       .getRelated()
@@ -41,6 +45,11 @@ export class ProductOverviewComponent {
   productData: any;
   productStyles: any;
   relatedData: any;
+  current_style: any;
+
+  changePhoto = (style: any): void => {
+    this.current_style = style;
+  };
 }
 
 // export interface productDataType {
