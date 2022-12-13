@@ -1,0 +1,92 @@
+.product-overview {
+  /* border: solid 1px red; */
+  background-color: #f0f0f0;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+}
+
+.main-image {
+  object-fit: fill;
+  margin: 2rem;
+}
+
+.clothing-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clothing-type {
+  font-size: 14px;
+  margin: 1rem;
+}
+
+.clothing-title {
+  font-size: 40px;
+  margin: 1rem;
+}
+
+.clothing-desc {
+  font-size: 14px;
+}
+
+.clothing-review {
+  font-size: 12px;
+  margin: 0.5rem;
+}
+
+.clothing-style-name {
+  font-size: 22px;
+}
+
+.related-styles-list {
+  /* border: solid 1px blue; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.related-styles {
+  border: solid 1px skyblue;
+  border-radius: 3rem;
+  height: 60px;
+  width: 60px;
+  padding: 2px;
+  margin: 5px 10px;
+  object-fit: cover;
+}
+
+.select-style {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.option {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.add-cart-btn {
+  width: 10rem;
+  display: block;
+  border: none;
+  background-color: skyblue;
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+}

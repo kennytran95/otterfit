@@ -1,0 +1,20 @@
+.stars:before {
+  content: "★★★★★";
+  letter-spacing: -1.2px;
+  background: linear-gradient(
+    90deg,
+    skyblue var(--percent),
+    #b3b3b3 var(--percent)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 22px;
+  font-family: Times; /* make sure ★ appears correctly*/
+  line-height: 1;
+}
