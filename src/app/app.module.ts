@@ -7,9 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { StarsComponent } from './shared/stars/stars.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormSizesComponent } from './form-sizes/form-sizes.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductOverviewComponent, StarsComponent, FormSizesComponent],
+  declarations: [AppComponent, ProductOverviewComponent, StarsComponent, FormSizesComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
