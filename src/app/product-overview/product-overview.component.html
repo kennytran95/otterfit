@@ -14,7 +14,7 @@
       <ul class="related-styles-list">
         <img
           class="related-styles"
-          [src]="style.photos[0].url"
+          [src]="style.photos[0].thumbnail_url"
           *ngFor="let style of productStyles?.result"
           (click)="changePhoto(style)"
         />

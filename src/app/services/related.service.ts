@@ -8,6 +8,6 @@ export class RelatedService {
   constructor(private http: HttpClient) {}
 
   getRelated() {
-    return this.http.get('http://localhost:3000/products/1/related');
+    return this.http.get('http://localhost:3000/products/203/related');
   }
 }

@@ -8,6 +8,6 @@ export class ProductDataService {
   constructor(private http: HttpClient) {}
 
   getData() {
-    return this.http.get('http://localhost:3000/products/1');
+    return this.http.get('http://localhost:3000/products/203');
   }
 }
