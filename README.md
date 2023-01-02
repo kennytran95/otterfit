@@ -1,6 +1,8 @@
 # Otterfit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+Frontend Developer
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1. This project consists of angular components & services communicating to a node.js, postgreSQL database, and express.js backend codebase.
 
 ## Development server
 
