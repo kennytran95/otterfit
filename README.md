@@ -15,7 +15,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## 👩🏻‍💻Technologies
-![Angular](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=angular&logoColor=%2361DAFB&labelColor=black)
+![Angular](https://img.shields.io/badge/angular-%2320232a.svg?style=for-the-badge&logo=angular&logoColor=%2361DAFB&labelColor=black)
 <br>
 ![TypeScript](https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)
 <br>
